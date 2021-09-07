@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Amazon Ember Light';
+    src: url('assets/AmazonEmber_Lt.ttf');
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: url('assets/AmazonEmber_Rg.ttf');
+}
+
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Amazon Ember';
+    background-color: black;
+}
+
+/*-----Navbar related css-----*/
+
+nav {
+    position: fixed;
+    min-height:72px;
+    min-width: 100%;
+    background-color: #1a232e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-logo{
+    max-width: 112px;
+    padding: 0 10px 0 30px;
+}
+
+.nav-left a,
+.nav-right a,
+.button{
+    text-decoration: none;
+    color:white;
+    font-size: 17px;
+    opacity: 80%;
+}
+
+.nav-left{
+    min-width: 460px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-hover{
+    font-family: 'Amazon Ember Light';
+    opacity: 70%;
+}
+
+.nav-right{
+    padding-right: 50px;
+    min-width: 330px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-right > .button{
+    background-color: #0f79af;
+    padding: 8px 19px 7px;
+    border-radius: 3px;
+}
+
+.nav-right img {
+    max-width: 20px;
+    opacity: 80%;
+}
+
+.arrow {
+    position: absolute;
+    top: 32px;
+    padding-left: 5px;
+}
+
+#arrow-far{
+    padding-left: 15px;
+}
+
+.nav-right>.menu-hover::before{
+    background-image: url("assets/Globe.png");
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    content:" ";
+    padding-right: 5px;
+    background-repeat: no-repeat;
+    filter: invert(100%);
+}
+
+.profile{
+    min-width: 30px;
+    filter:invert(80%);
+    transition: 0.3s;
+    padding-left:10px;
+}
+
+.profile:hover{
+    filter:invert(100%);
+}
+
+
+/*-----Main related css-----*/
