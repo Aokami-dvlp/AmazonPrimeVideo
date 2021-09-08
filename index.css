@@ -8,13 +8,32 @@
     src: url('assets/AmazonEmber_Rg.ttf');
 }
 
+/*Single tag/class related css*/
+
 body {
     margin:0;
     padding:0;
-    font-family: 'Amazon Ember';
-    background-color: black;
+    font-family: 'Amazon Ember Light';
 }
 
+ul {
+    list-style: none;
+    text-align: left;
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button{
+    color: white;
+    background-color: #0F79AF;
+    padding: 8px 19px 7px;
+    border-radius: 2px;
+    font-family: 'Amazon Ember';
+
+}
 /*-----Navbar related css-----*/
 
 nav {
@@ -34,11 +53,24 @@ nav {
 
 .nav-left a,
 .nav-right a,
-.button{
-    text-decoration: none;
+nav .button{
+    font-family: 'Amazon Ember';
     color:white;
     font-size: 17px;
     opacity: 80%;
+}
+
+nav span,
+li span{
+    color: white;
+    cursor:pointer;
+    opacity: 85%;
+    font-family: 'Amazon Ember Light';
+}
+
+.menu-hover span:hover,
+li span:hover{
+    opacity:100%;
 }
 
 .nav-left{
@@ -48,9 +80,8 @@ nav {
     align-items: center;
 }
 
-.menu-hover{
-    font-family: 'Amazon Ember Light';
-    opacity: 70%;
+.menu-hover span{
+    padding: 15px 0;
 }
 
 .nav-right{
@@ -62,9 +93,14 @@ nav {
 }
 
 .nav-right > .button{
-    background-color: #0f79af;
+    background-color: #1399DE;
     padding: 8px 19px 7px;
     border-radius: 3px;
+    transition: 0.3s;
+}
+
+.nav-right > .button:hover {
+    background-color:#18b2ff;
 }
 
 .nav-right img {
@@ -96,14 +132,84 @@ nav {
 
 .profile{
     min-width: 30px;
-    filter:invert(80%);
-    transition: 0.3s;
+    filter:invert(100%);
     padding-left:10px;
+    transition: 0.9s;
 }
 
-.profile:hover{
-    filter:invert(100%);
+
+/*-----Hidden menus related css-----*/
+
+.hidden-menu {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    background-color: #202b38;
+    top: 40px;
+    left: 365px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.hidden-menu li{
+    position: relative;
+    width: 100%;
+    left: -40px;
+    padding: 14px 24px 14px 16px;
+    border-bottom: 1px solid #2f3f52;
+}
+
+.hidden-menu li:last-of-type{
+    border-bottom:none;
+}
+
+.menu-hover:hover
+.hidden-menu{
+    visibility: visible;
 }
 
 
 /*-----Main related css-----*/
+
+.initial{
+    height: 105vh;
+    background-image:url('assets/initialTitleGrid.jpg');
+    background-size: contain;
+    background-position-y: 68px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.landing{
+    color: white;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.whiteline{
+    position:relative;
+    bottom:3px;
+    display:inline-block;
+    height: 1px;
+    width: 100px;
+    background-color: white;
+}
+
+.blackline{
+    position:relative;
+    bottom:3px;
+    display:inline-block;
+    height: 1px;
+    width: 10px;
+    background-color: black;
+}
+
+.landing .button{
+    padding: 15px 25px;
+    margin: 30px 0;
+    width: 280px;
+}
