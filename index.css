@@ -26,6 +26,19 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 40px;
+    margin: 0px;
+}
+
+.biggerP {
+    font-size: 21px;
+}
+
+.smallerP{
+    font-size: 15px;
+}
+
 .button{
     color: white;
     background-color: #0F79AF;
@@ -38,6 +51,7 @@ a {
 
 nav {
     position: fixed;
+    top:0;
     min-height:72px;
     min-width: 100%;
     background-color: #1a232e;
@@ -172,10 +186,10 @@ li span:hover{
 /*-----Main related css-----*/
 
 .initial{
-    height: 105vh;
+    height: 95vh;
     background-image:url('assets/initialTitleGrid.jpg');
-    background-size: contain;
-    background-position-y: 68px;
+    background-size: cover;
+    margin-top: 70px;
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-end;
@@ -184,10 +198,16 @@ li span:hover{
 
 .landing{
     color: white;
-    width: 45%;
+    width: 41%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    padding-right: 60px;
+}
+
+div .landing:first-of-type{
+    box-shadow: -20px 0px 170px 20px rgba(0,0,0,1);
 }
 
 .whiteline{
@@ -195,7 +215,7 @@ li span:hover{
     bottom:3px;
     display:inline-block;
     height: 1px;
-    width: 100px;
+    width: 121px;
     background-color: white;
 }
 
@@ -208,8 +228,43 @@ li span:hover{
     background-color: black;
 }
 
+.-o- {
+    position: relative;
+    bottom: 10px;
+}
+
+
 .landing .button{
-    padding: 15px 25px;
-    margin: 30px 0;
-    width: 280px;
+    padding: 15px 20px;
+    width: 240px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.landing .button:first-of-type{
+    margin-top: 30px;
+}
+
+.landing .button:last-of-type{
+    margin: 7px 0 25px;
+}
+
+.landing a:last-child{
+    color:#2F99C6;
+}
+
+.channels {
+    background-color: white;
+    height: 70vh;
+    display: flex;
+
+}
+
+.mosaic{
+    display:grid;
+    width: 40%;
+}
+
+.mosaic img{
+    max-width:175px;
 }
