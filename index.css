@@ -311,8 +311,8 @@ div .landing:first-of-type{
 
 .download{
     color:white;
-    background-image: linear-gradient(to right, #000 40%, transparent 58%), url('https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/PV_Benefits_Dowlnoad_Magnet_UPDATED.jpg');
-    min-height: 73vh;
+    background-image: linear-gradient(to right, #000 40%, transparent 58%), url('assets/download.jpg');
+    height: 73vh;
     background-size: cover;
 }
 
