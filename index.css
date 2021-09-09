@@ -29,6 +29,8 @@ a {
 h1 {
     font-size: 40px;
     margin: 0px;
+    font-family: 'Amazon Ember';
+    font-weight: lighter;
 }
 
 .biggerP {
@@ -58,6 +60,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .top-logo{
@@ -202,7 +205,6 @@ li span:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     padding-right: 60px;
 }
 
@@ -242,11 +244,11 @@ div .landing:first-of-type{
 }
 
 .landing .button:first-of-type{
-    margin-top: 30px;
+    margin: 30px;
 }
 
 .landing .button:last-of-type{
-    margin: 7px 0 25px;
+    margin: 7px 0 25px 0;
 }
 
 .landing a:last-child{
@@ -255,16 +257,36 @@ div .landing:first-of-type{
 
 .channels {
     background-color: white;
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 
+}
+
+.chan-description{
+    width: 41%;
+    margin-top: -80px;
+}
+
+.channels h1,
+.channels p{
+    color: black;
 }
 
 .mosaic{
     display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
     width: 40%;
+    padding-right: 60px;
 }
 
 .mosaic img{
     max-width:175px;
+}
+
+.mosaic img:hover{
+    box-shadow: 10px 10px 15px 0px rgba(84,84,84,1);
 }
