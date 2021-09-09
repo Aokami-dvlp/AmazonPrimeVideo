@@ -47,6 +47,7 @@ h1 {
     padding: 8px 19px 7px;
     border-radius: 2px;
     font-family: 'Amazon Ember';
+    font-size: 17px;
 
 }
 /*-----Navbar related css-----*/
@@ -239,12 +240,11 @@ div .landing:first-of-type{
 .landing .button{
     padding: 15px 20px;
     width: 240px;
-    font-size: 17px;
     text-align: center;
 }
 
 .landing .button:first-of-type{
-    margin: 30px;
+    margin-top: 30px;
 }
 
 .landing .button:last-of-type{
@@ -289,4 +289,40 @@ div .landing:first-of-type{
 
 .mosaic img:hover{
     box-shadow: 10px 10px 15px 0px rgba(84,84,84,1);
+}
+
+.buy-movies{
+    color:white;
+    background-image: linear-gradient(to right, #000 40%, transparent 58%), url('https://m.media-amazon.com/images/G/02/digital/video/TVOD/2020/FireTV/TVOD_Launch_Multi_IT_MLP_BG_left_1440x675.jpg');
+    min-height: 73vh;
+    background-size: cover;
+}
+
+.buy-movies div{
+    width: 40%;
+    padding: 60px;
+}
+
+.buy-movies .button{
+    position: relative;
+    padding: 18px 48px;
+    top: 50px;
+}
+
+.download{
+    color:white;
+    background-image: linear-gradient(to right, #000 40%, transparent 58%), url('https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/PV_Benefits_Dowlnoad_Magnet_UPDATED.jpg');
+    min-height: 73vh;
+    background-size: cover;
+}
+
+.download div{
+    width: 40%;
+    padding: 60px;
+}
+
+.download div a {
+    display: inline-block;
+    margin: 40px 0 8px 0;
+    padding: 15px 20px;
 }
