@@ -33,6 +33,12 @@ h1 {
     font-weight: lighter;
 }
 
+h2 {
+    font-size: 36px;
+    font-family: 'Amazon Ember';
+    font-weight: lighter;   
+}
+
 .biggerP {
     font-size: 21px;
 }
@@ -236,7 +242,6 @@ div .landing:first-of-type{
     bottom: 10px;
 }
 
-
 .landing .button{
     padding: 15px 20px;
     width: 240px;
@@ -244,7 +249,7 @@ div .landing:first-of-type{
 }
 
 .landing .button:first-of-type{
-    margin-top: 30px;
+    margin: 30px 0 25px 0;
 }
 
 .landing .button:last-of-type{
@@ -298,7 +303,9 @@ div .landing:first-of-type{
     background-size: cover;
 }
 
-.buy-movies div{
+.buy-movies div,
+.download div,
+.prime div{
     width: 40%;
     padding: 60px;
 }
@@ -316,13 +323,67 @@ div .landing:first-of-type{
     background-size: cover;
 }
 
-.download div{
-    width: 40%;
-    padding: 60px;
-}
 
-.download div a {
+.download div a,
+.prime div a {
     display: inline-block;
     margin: 40px 0 8px 0;
     padding: 15px 20px;
+}
+
+.features {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feat-container{
+    max-width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.feature-card{
+    max-width: 32%;
+    text-align: center;
+
+}
+
+.feature-card p,
+.feature-card h1{
+    margin-top: -20px;
+}
+
+.prime {
+background-image: url(assets/JetpackJoe.jpg);
+background-position: top-right;
+background-size: cover;
+max-height: 85vh;
+background-color: #b2e5f6;
+}
+
+footer{
+    min-height: 20vh;
+    background-color: #222222;
+    text-align: center;
+}
+
+footer div{
+    color: rgb(160, 160, 160);
+    position: relative;
+    left:20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width:60%;
+}
+
+footer img{
+    margin-top: 20px;
+}
+
+footer div a{
+    color:#2F99C6;
 }
