@@ -249,7 +249,7 @@ div .landing:first-of-type{
 }
 
 .landing .button:first-of-type{
-    margin: 30px 0 25px 0;
+    margin-top: 25px;
 }
 
 .landing .button:last-of-type{
